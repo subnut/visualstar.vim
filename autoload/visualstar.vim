@@ -1,4 +1,4 @@
-fun! visualstar(star_or_hash)
+fun! visualstar#visualstar(star_or_hash)
 	let l:temp = @"  "store
 
 	"use noau to not trigger other plugins
@@ -20,4 +20,3 @@ fun! visualstar(star_or_hash)
 
 	let @/ = '\V' . @/   "Very nomagic
 endfun
-
