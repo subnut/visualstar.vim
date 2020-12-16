@@ -8,10 +8,10 @@ endif
 xnoremap <Plug>(VisualstarSearch-*) <cmd>call visualstar#visualstar('*')<CR>//<CR>
 xnoremap <Plug>(VisualstarSearch-#) <cmd>call visualstar#visualstar('#')<CR>//<CR>
 
-xnoremap <Plug>(VisualstarSearchReplace-*) <cmd>call visualstar#visualstar('*')<CR>:s%//c<CR>
-xnoremap <Plug>(VisualstarSearchReplace-#) <cmd>call visualstar#visualstar('#')<CR>:s%//c<CR>
-nnoremap <Plug>(VisualstarSearchReplace-*) bve<cmd>call visualstar#visualstar('*')<CR>:%s///c<Left><Left>
-nnoremap <Plug>(VisualstarSearchReplace-#) bve<cmd>call visualstar#visualstar('#')<CR>:%s///c<Left><Left>
+xnoremap <Plug>(VisualstarSearchReplace-*) <cmd>call visualstar#visualstar('*')<CR>:%s///c<Left><Left>
+xnoremap <Plug>(VisualstarSearchReplace-#) <cmd>call visualstar#visualstar('#')<CR>:%s///c<Left><Left>
+nnoremap <Plug>(VisualstarSearchReplace-*) <cmd>normal! *<CR><C-O>:%s///c<Left><Left>
+nnoremap <Plug>(VisualstarSearchReplace-#) <cmd>normal! *<CR><C-O>:%s///c<Left><Left>
 
 " Default mappings
 " ----------------
