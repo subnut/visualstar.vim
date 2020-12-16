@@ -26,8 +26,9 @@ endif
 " Extra mappings
 " --------------
 if !g:visualstar_extra_mappings_disabled
-  map <unique> <leader>* <Plug>(VisualstarSearchReplace-*)
-  map <unique> <leader># <Plug>(VisualstarSearchReplace-#)
+  " silent! + <unique> = don't map if already mapped to something
+  silent! map <unique> <leader>* <Plug>(VisualstarSearchReplace-*)
+  silent! map <unique> <leader># <Plug>(VisualstarSearchReplace-#)
 endif
 
 " vim: et ts=2
