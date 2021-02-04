@@ -13,7 +13,7 @@ fun! visualstar#visualstar(star_or_hash)
   if a:star_or_hash ==# '*'
 
     "Escape all slashes, bcoz we shall search with slash
-    let @/ = substitute(@/, '\/', '\\/', 'g')
+    let @/ = substitute(@/, '/', '\\/', 'g')
 
     " Note, the 2nd argument is a regexp. So, to match a literal slash, we
     " need to escape it using the backslash.
@@ -25,7 +25,7 @@ fun! visualstar#visualstar(star_or_hash)
   elseif a:star_or_hash ==# '#'
 
     "Escape all questions, bcoz we shall search with question
-    let @/ = substitute(@/, '\?', '\\?', 'g')
+    let @/ = substitute(@/, '?', '\\?', 'g')
 
   endif
 
